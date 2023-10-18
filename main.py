@@ -8,9 +8,8 @@ def main():
     for letter in letters:
         characters.append(letter)
 
-    characters_copy = characters.copy()
-    characters_copy.sort()
-    for character in characters_copy:
+    characters.sort()
+    for character in characters:
         if character.isalpha():
             print(
                 f"The '{character}' character was found {letters[character]} times")
